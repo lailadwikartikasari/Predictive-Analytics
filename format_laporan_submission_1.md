@@ -4,6 +4,8 @@
 
 Perkembangan Machine Learning yang sangat pesat dapat membantu manusia dalam menyelesaikan permasalahan yang rumit dengan komputasi komputer. Pada proyek ini penulis ingin menggunakan Machine Learning untuk membantu manusia dalam perawatan kesehatan ibu Hamil.
 
+Masa  Kehamilan  merupakan  masa  penting bagi seorang ibu, padakondisi ini ibu harus lebih fokus untuk memelihara  kesehatan diri sendiri dikarenakan adanya calon manusia yang  akan dilahirkan.Kesehatan yang     buruk bagi ibu hamil akan mempengaruhi kesehatan janin yang dikandungnya.Kesehatan ibu hamil yang buruk  dapat  mengakibatkan kematian ibu dan anak. [1](https://ejournal.bsi.ac.id/ejurnal/index.php/swabumi/article/view/15270/pdf) 
+
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
 - Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
