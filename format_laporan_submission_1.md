@@ -12,10 +12,6 @@ Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa fak
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
-
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
