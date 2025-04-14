@@ -38,12 +38,15 @@ Menjelaskan tujuan dari pernyataan masalah:
 - **Informasi Dataset**
   <br> Dataset yang digunakan pada proyek ini yaitu dataset [Maternal Health Risk Data](https://www.kaggle.com/datasets/csafrit2/maternal-health-risk-data), informasi lebih lanjut mengenai dataset tersebut dapat lihat pada tabel berikut:
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
-
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+Attribute  | Keterangan
+------------- | -------------
+Sumber | https://www.kaggle.com/datasets/csafrit2/maternal-health-risk-data
+Age | Usia dalam tahun saat seorang wanita hamil.
+SystolicBP | Nilai atas Tekanan Darah dalam mmHg, atribut penting lainnya selama kehamilan.
+DiastolicBP | Nilai Tekanan Darah yang lebih rendah dalam mmHg, atribut penting lainnya selama kehamilan.
+BS | Kadar glukosa darah dalam konsentrasi molar, mmol/L.
+HeartRate | Denyut jantung normal saat istirahat dalam denyut per menit.
+Risk Level | Tingkat Intensitas Risiko yang diprediksi selama kehamilan dengan mempertimbangkan atribut sebelumnya.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
