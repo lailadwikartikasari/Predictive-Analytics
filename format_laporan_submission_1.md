@@ -63,20 +63,20 @@ Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam p
 
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
-Gambar 1a. Analisis Univariat (Data Kategori)
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
+### Gambar 1a. Analisis Univariat (Data Kategori)
+![Gambar 1a - Analisis Univariat Data Kategori](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
 
-Gambar 1b. Analisis Univariat (Data Numerik)
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
+### Gambar 1b. Analisis Univariat (Data Numerik)
+![Gambar 1b - Analisis Univariat Data Numerik](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
 
-Gambar 2a. Analisis Multivariat (Data Kategori dan data Numerik)
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1VEFga-fZFwVeD2T8zUIVW5c8YxrAyKX)
+### Gambar 2a. Analisis Multivariat (Data Kategori dan Numerik)
+![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1VEFga-fZFwVeD2T8zUIVW5c8YxrAyKX)
 
-Gambar 2b. Analisis Multivariat (Data Kategori dan data Numerik)
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1XyS-SRes_Mr_ibGD7vMDE5WEdNz6Qdmr)
+### Gambar 2b. Analisis Multivariat (Data Kategori dan Numerik)
+![Gambar 2b - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1XyS-SRes_Mr_ibGD7vMDE5WEdNz6Qdmr)
 
-Gambar 3a. Analisis Matrix Korelasi
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1gD2FLjbVDR86-GtTJEprVE0F8Xh3zmIY)
+### Gambar 3a. Analisis Matrix Korelasi
+![Gambar 3a - Matrix Korelasi](https://drive.google.com/uc?export=view&id=1gD2FLjbVDR86-GtTJEprVE0F8Xh3zmIY)
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
