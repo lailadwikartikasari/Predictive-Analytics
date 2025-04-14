@@ -69,6 +69,15 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ### Gambar 1b. Analisis Univariat (Data Numerik)
 ![Gambar 1b - Analisis Univariat Data Numerik](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
 
+Gambar tersebut menampilkan histogram dari enam fitur yang berbeda dalam sebuah dataset. Setiap histogram menunjukkan distribusi frekuensi nilai untuk masing-masing fitur. Mari kita analisis setiap histogram secara individual:
+
+- Age: Histogram untuk fitur "Age" menunjukkan distribusi usia dalam dataset. Terlihat adanya beberapa puncak frekuensi, terutama di sekitar usia 20-30 tahun. Distribusi ini cenderung miring ke kanan, mengindikasikan bahwa sebagian besar sampel berada pada usia yang lebih muda, dengan frekuensi yang menurun seiring bertambahnya usia hingga sekitar 70 tahun. 
+- SystolicBP: Histogram untuk "SystolicBP" (Tekanan Darah Sistolik) menunjukkan distribusi tekanan darah sistolik. Sebagian besar data terkumpul di sekitar nilai 120. Terdapat juga beberapa nilai ekstrem atau outlier dengan frekuensi rendah, terutama nilai yang sangat tinggi di atas 400 dan beberapa nilai di bawah 60.
+- DiastolicBP: Histogram untuk "DiastolicBP" (Tekanan Darah Diastolik) menunjukkan distribusi tekanan darah diastolik. Distribusi ini terlihat memiliki beberapa puncak, dengan konsentrasi tertinggi di sekitar nilai 70-80. Terdapat juga beberapa nilai yang lebih rendah dan lebih tinggi dengan frekuensi yang lebih sedikit.
+- BS: Histogram untuk "BS" (Kemungkinan merujuk pada Blood Sugar atau Gula Darah) menunjukkan distribusi kadar gula darah. Distribusi ini sangat miring ke kanan, dengan sebagian besar nilai terkumpul di rentang yang rendah (sekitar 6-8). Terdapat beberapa nilai yang jauh lebih tinggi dengan frekuensi yang sangat rendah, mengindikasikan adanya beberapa sampel dengan kadar gula darah yang tinggi.
+- Body Temp: Histogram untuk "Body Temp" (Suhu Tubuh) menunjukkan distribusi suhu tubuh. Sebagian besar data terkumpul sangat rapat di sekitar nilai 98-99 derajat. Terdapat juga beberapa nilai yang jauh lebih tinggi di sekitar 102-103 derajat dengan frekuensi yang sangat rendah, yang mungkin mengindikasikan kondisi demam pada beberapa sampel.
+- HeartRate: Histogram untuk "HeartRate" (Detak Jantung) menunjukkan distribusi detak jantung. Sebagian besar data terkumpul di sekitar nilai 80-90 denyut per menit. Terdapat juga beberapa nilai yang lebih rendah dan lebih tinggi dengan frekuensi yang lebih sedikit, termasuk beberapa nilai yang cukup tinggi di atas 140.
+
 ### Gambar 2a. Analisis Multivariat (Data Kategori dan Numerik)
 ![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1bJwea4p9QpEyw1AhWYH3gG3gLqP3NW-E)
 
