@@ -70,7 +70,7 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ![Gambar 1b - Analisis Univariat Data Numerik](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
 
 ### Gambar 2a. Analisis Multivariat (Data Kategori dan Numerik)
-![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1VEFga-fZFwVeD2T8zUIVW5c8YxrAyKX)
+![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1VEFgafZFwVeD2T8zUIVW5c8YxrAyKX)
 
 ### Gambar 2b. Analisis Multivariat (Data Kategori dan Numerik)
 ![Gambar 2b - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1XyS-SRes_Mr_ibGD7vMDE5WEdNz6Qdmr)
