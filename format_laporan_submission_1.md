@@ -63,10 +63,21 @@ Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam p
 
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
+Gambar 1a. Analisis Univariat (Data Kategori)
 ![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
 
-Gambar 1a. Analisis Univariat (Data Kategori)
+Gambar 1b. Analisis Univariat (Data Numerik)
 ![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
+
+Gambar 2a. Analisis Multivariat (Data Kategori dan data Numerik)
+![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z)
+
+Gambar 2b. Analisis Multivariat (Data Kategori dan data Numerik)
+![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z)
+
+Gambar 3a. Analisis Matrix Korelasi
+![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z)
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
