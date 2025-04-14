@@ -70,7 +70,7 @@ Gambar 1b. Analisis Univariat (Data Numerik)
 ![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
 
 Gambar 2a. Analisis Multivariat (Data Kategori dan data Numerik)
-![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z)
+![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z?hl)
 
 Gambar 2b. Analisis Multivariat (Data Kategori dan data Numerik)
 ![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=1A9PcMITEs9gzU9OuFj1aa2rB5pL4U04Z)
