@@ -8,7 +8,7 @@ Masa  Kehamilan  merupakan  masa  penting bagi seorang ibu, padakondisi ini ibu 
 
 Faktor penting penyebab kehamilan berisiko terjadi pada kelompok ibu usia reproduksi <20 tahun dan umur >35 tahun. Kategori usia ibu kurang dari 20 tahun dianggap alat reproduksi masih terlalu muda dan belum matang, keadaan uterus belum sempurna untuk proses kehamilan dan persalinan yang dapat membahayakan kondisi ibu serta pertumbuhan dan perkembangan janin dalam kandungan.Ibu dengan usia lebih dari 35 tahun dapat berisiko terjadinya penyulit disebabkan penurunan fungsi reproduksi dan melemahnya tenaga untuk mengejan ketika proses kelahiran bayi[[2](https://jik.stikesalifah.ac.id/index.php/jurnalkes/article/view/708/pdf)]
 
-Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa faktor risiko, seperti: usia, Tekanan Darah Sistolik, DiastolikBP, BS, HeartRate. Berdasarkan permasalahan di atas, maka pada proyek ini akan dibangun suatu model machine learning untuk memprediksi risiko kesehatan ibu hamil. Dengan adanya model machine learning ini, diharapkan dapat membantu dan memudahkan analisa serta dapat mengambil keputusan yang tepat tentang strategi perawatan kesehatan dalam dunia kebidanan. Sehingga dapat meminimalisir kesalahan diagnosis dan komplikasi kehamilan di masa mendatang. Kemudian untuk tahap pengembangan selanjutnya, diharapkan implementasi dari model ini dapat dijalankan pada sebuah aplikasi berbasis web ataupun android nantinya, yang dapat digunakan oleh tenaga medis maupun ibu hamil untuk memantau kondisi kehamilan secara berkala.
+Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa faktor risiko, seperti: usia, Tekanan Darah Sistolik, DiastolikBP, BS, HeartRate. Berdasarkan permasalahan di atas, maka pada proyek ini akan dibangun suatu model machine learning untuk memprediksi risiko kesehatan ibu hamil. Dengan adanya model machine learning ini, diharapkan dapat membantu dan memudahkan analisa serta dapat mengambil keputusan yang tepat tentang strategi perawatan kesehatan dalam dunia kebidanan. Sehingga dapat meminimalisir kesalahan diagnosis dan komplikasi kehamilan di masa mendatang.
 
 ## Business Understanding
 
@@ -48,9 +48,20 @@ BS | Kadar glukosa darah dalam konsentrasi molar, mmol/L.
 HeartRate | Denyut jantung normal saat istirahat dalam denyut per menit.
 Risk Level | Tingkat Intensitas Risiko yang diprediksi selama kehamilan dengan mempertimbangkan atribut sebelumnya.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
+- Dataset berupa CSV
+- Dataset terdiri dari 1014 *records* dengan 7 buah fitur yang diukur.
+- Dataset terdiri dari 1 data kategori dan 6 data numerik.
+- Dataset memiliki *data duplikat* sejumlah 562 records
 
+**Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data**:
+Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data
+
+Analisis univariat adalah metode analisis data sederhana yang fokus pada satu variabel saja. Visualisasi yang dihasilkan biasanya bertujuan untuk menunjukkan bagaimana data pada variabel tersebut terdistribusi. Sebaliknya, analisis multivariat melibatkan lebih dari dua variabel sekaligus. Tujuan visualisasinya adalah untuk mengungkap hubungan dan pola yang kompleks dalam data yang memiliki banyak dimensi.
+
+Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam proyek ini karena mampu memberikan wawasan yang mendalam mengenai perilaku dari berbagai fitur yang ada dalam dataset. Beberapa teknik visualisasi spesifik telah diterapkan untuk tujuan ini. Pertama, catplot digunakan untuk memvisualisasikan distribusi data pada fitur-fitur yang bersifat kategorikal, memungkinkan pemahaman tentang bagaimana nilai-nilai dalam kategori tersebut tersebar. Kedua, pairplot dimanfaatkan untuk mengeksplorasi hubungan antar berbagai pasangan fitur dalam dataset, sehingga pola interaksi antar variabel dapat diidentifikasi. Terakhir, heatmap digunakan untuk menyajikan matriks korelasi antar semua fitur yang ada dalam dataset secara visual, mempermudah dalam memahami kekuatan dan arah hubungan linear antara satu fitur dengan fitur lainnya. Kombinasi teknik visualisasi ini diharapkan dapat memberikan pemahaman yang komprehensif terhadap karakteristik dan relasi dalam dataset.
+
+![download (1)](https://drive.google.com/file/d/14ITvwT6iohnlkP92AT2GtNpwbWMopJru/view?usp=drive_link)
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
