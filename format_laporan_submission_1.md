@@ -61,7 +61,8 @@ Analisis univariat adalah metode analisis data sederhana yang fokus pada satu va
 
 Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam proyek ini karena mampu memberikan wawasan yang mendalam mengenai perilaku dari berbagai fitur yang ada dalam dataset. Beberapa teknik visualisasi spesifik telah diterapkan untuk tujuan ini. Pertama, catplot digunakan untuk memvisualisasikan distribusi data pada fitur-fitur yang bersifat kategorikal, memungkinkan pemahaman tentang bagaimana nilai-nilai dalam kategori tersebut tersebar. Kedua, pairplot dimanfaatkan untuk mengeksplorasi hubungan antar berbagai pasangan fitur dalam dataset, sehingga pola interaksi antar variabel dapat diidentifikasi. Terakhir, heatmap digunakan untuk menyajikan matriks korelasi antar semua fitur yang ada dalam dataset secara visual, mempermudah dalam memahami kekuatan dan arah hubungan linear antara satu fitur dengan fitur lainnya. Kombinasi teknik visualisasi ini diharapkan dapat memberikan pemahaman yang komprehensif terhadap karakteristik dan relasi dalam dataset.
 
-![download (1)](https://drive.google.com/file/d/14ITvwT6iohnlkP92AT2GtNpwbWMopJru/view?usp=drive_link)
+![Gambar Risiko Kesehatan Ibu Hamil](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
