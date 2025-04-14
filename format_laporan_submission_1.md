@@ -168,19 +168,19 @@ Pada proyek ini, Proses modeling dalam proyek ini menggunakan 3 algoritma _machi
       -   AdaBoost sangat dipengaruhi oleh outlier.
 
 ## Evaluation
-Pada proyek ini, metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik **akurasi** dan **MSE**. Akurasi di sini merupakan tingkat keakuratan data prediksi yang didasarkan dari data latih pada model, tingkat akurasi tertinggi ialah pada model KNN sebesar 89.16% dan ini menunjukkan bahwasannya KNN merupakan model terbaik dari kedua model lainnya dalam memprediksi nilai **Bitcoin** di masa mendatang. MSE sendiri merupakan _Mean Squared Error_ yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan dalam persamaan berikut: <br>
+Pada proyek ini, metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik  **MSE**.MSE sendiri merupakan _Mean Squared Error_ yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan dalam persamaan berikut: <br>
 <image src='https://www.pythonpool.com/wp-content/uploads/2021/08/20210812_200937_0000-1024x270.png' width= 500/>
 <br> Keterangan:
 - N = jumlah dataset
 - yi = nilai sebenarnya
 - yi^ = nilai prediksi
 
-Sebelum menggunakan metrik MSE, harus dilakukan scaling fitur numerik terlebih dahulu pada data uji untuk menghindari kebocoran data. Setelah melakukan evaluasi berdasarkan metrik MSE dan tingkat akurasi prediksi pada model, penulis mencoba memprediksi harga untuk 30 hari ke depan dengan model KNN dan hasilnya cukup memuaskan karena nilainya tidak jauh berbeda dengan data sebelumnya.
+Sebelum menggunakan metrik MSE, harus dilakukan scaling fitur numerik terlebih dahulu pada data uji untuk menghindari kebocoran data. Setelah melakukan evaluasi berdasarkan metrik MSE.
 
 Berikut ini perbandingan grafik metrik MSE pada ketiga model:
 <br>
-<image src='https://raw.githubusercontent.com/barbarianking88/Proyek-Pertama-Kirim-Submission-dan-Review/main/images/nilai_error_model.png' width= 500/>
-<br> Selain akurasi untuk menentukan model terbaik dapat dilihat juga berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. jika dilihat dari gambar di atas KNN lah model yang memiliki tingkat eror terendah dibandingkan dengan model lainnya.
+![Gambar Model](https://drive.google.com/uc?export=view&id=1a0674_h3DrMMgb_gkVYklWQlXh00aZY1)
+
 Tabel 1 berikut merupakan perbandingan 3 buah model yang coba dibandingkan dengan data uji dan data latih:
 |     |train|test|
 |---|---|---|
