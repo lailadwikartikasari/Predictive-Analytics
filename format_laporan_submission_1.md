@@ -15,21 +15,28 @@ Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa fak
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Tingkat risiko kesehatan ibu hamil tidak teridentifikasi secara dini, mengakibatkan penanganan medis yang terlambat.
-- Data kesehatan ibu hamil memiliki outlier dan ketidakseimbangan variabel, yang dapat memengaruhi akurasi prediksi.
-- Minimnya tools berbasis teknologi untuk memantau kesehatan ibu hamil secara real-time.
+- Bagaimana cara melakukan pra-pemrosesan data tingkat risiko kesehatan ibu hamil sehingga dapat digunakan untuk membuat model yang baik?
+- Bagaimana mengolah dataset agar dapat dibuat menjadi model prediksi tingkat risiko kesehatan ibu hamil yang akurat?
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
-- Membangun model machine learning untuk memprediksi tingkat risiko kesehatan ibu hamil berdasarkan parameter klinis.
-- Membersihkan data dari outlier dan duplikat agar model lebih akurat.
-- Membangun aplikasi berbasis web/mobile untuk pemantauan kesehatan ibu hamil
+- Melakukan pra-pemrosesan data tingkat risiko kesehatan ibu hamil agar dapat digunakan dalam membangun model.
+- Melakukan proses data wragling dan data preparation terhadap dataset agar dapat dibuat model predksi tingkat risiko kesehatan ibu hamil yang akurat.
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+### Solution statements
+- **Pra-pemrosesan Data**. Pada pra-pemrosesan data dapat dilakukan beberapa tahapan, antara lain:
+  
+    -   Melakukan perhitungan dataset berdasarkan data: Age, SystolicBP, DiastolicBP, BS, BodyTemp, HeartRate, RiskLevel.
+    -   Melakukan pembagian dataset.
+    -   Mengatasi data pencilan (_outliers_) dengan Metode IQR.
+    -   Standardisasi data fitur numerik pada dataset.
+    
+- Agar didapatkan model prediksi yang baik maka dilakukan proses Data Wragling yang meliputi Data Gathering, Data Assessing, dan Data Cleaning.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+- **Informasi Dataset**
+  <br> Dataset yang digunakan pada proyek ini yaitu dataset [Maternal Health Risk Data](https://www.kaggle.com/datasets/csafrit2/maternal-health-risk-data), informasi lebih lanjut mengenai dataset tersebut dapat lihat pada tabel berikut:
 
 Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
 
