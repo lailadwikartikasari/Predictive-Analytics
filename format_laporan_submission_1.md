@@ -66,6 +66,13 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ### Gambar 1a. Analisis Univariat (Data Kategori)
 ![Gambar 1a - Analisis Univariat Data Kategori](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
 
+Gambar tersebut adalah diagram batang (bar chart) yang menampilkan distribusi frekuensi untuk variabel RiskLevel. Sumbu horizontal (sumbu-x) menunjukkan kategori tingkat risiko, yaitu "low risk", "mid risk", dan "high risk". Sumbu vertikal (sumbu-y) menunjukkan jumlah atau frekuensi sampel untuk setiap kategori risiko.
+
+Dari diagram batang tersebut, dapat diamati bahwa:
+- Low risk memiliki frekuensi tertinggi, dengan jumlah sampel mendekati 195.
+- Mid risk memiliki frekuensi yang lebih rendah dibandingkan "low risk", dengan jumlah sampel sekitar 65.
+- High risk memiliki frekuensi paling rendah di antara ketiga kategori, dengan jumlah sampel sekitar 25.
+
 ### Gambar 1b. Analisis Univariat (Data Numerik)
 ![Gambar 1b - Analisis Univariat Data Numerik](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
 
@@ -81,8 +88,38 @@ Gambar tersebut menampilkan histogram dari enam fitur yang berbeda dalam sebuah 
 ### Gambar 2a. Analisis Multivariat (Data Kategori dan Numerik)
 ![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1bJwea4p9QpEyw1AhWYH3gG3gLqP3NW-E)
 
+Berdasarkan gambar yang diberikan, grafik batang ini menunjukkan rata-rata 'HeartRate' (detak jantung) relatif terhadap 'RiskLevel' (tingkat risiko). Sumbu horizontal (sumbu-x) menunjukkan tiga kategori tingkat risiko: 'high risk' (risiko tinggi), 'low risk' (risiko rendah), dan 'mid risk' (risiko sedang). Sumbu vertikal (sumbu-y) menunjukkan nilai rata-rata 'HeartRate'.
+
+Dari grafik tersebut, dapat diamati bahwa:
+- Batang untuk 'high risk' menunjukkan rata-rata detak jantung sekitar 77.
+- Batang untuk 'low risk' menunjukkan rata-rata detak jantung sekitar 73.
+- Batang untuk 'mid risk' menunjukkan rata-rata detak jantung sekitar 74.
+
 ### Gambar 2b. Analisis Multivariat (Data Numerik dan Numerik)
 ![Gambar 2b - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1XyS-SRes_Mr_ibGD7vMDE5WEdNz6Qdmr)
+
+Tentu, mari kita analisis gambar pair plot ini. Gambar ini menyajikan visualisasi hubungan antara beberapa variabel numerik dalam sebuah dataset. Setiap variabel dibandingkan dengan variabel lainnya dalam bentuk scatter plot, dan distribusi univariat dari setiap variabel ditampilkan di diagonal.
+
+Berikut adalah penjelasan untuk setiap bagian dari pair plot:
+
+Diagonal (Histogram/KDE):
+- Age: Distribusi usia terlihat sedikit miring ke kanan (positively skewed), dengan sebagian besar data terkumpul di usia sekitar 20-40 tahun. Ada juga beberapa individu dengan usia lebih tua hingga sekitar 70 tahun.
+- SystolicBP (Tekanan Darah Sistolik): Distribusinya terlihat multimodal atau setidaknya memiliki dua puncak, menunjukkan kemungkinan adanya kelompok dengan tekanan darah sistolik yang berbeda. Sebagian besar data berada di sekitar nilai 100-140.
+- DiastolicBP (Tekanan Darah Diastolik): Distribusinya juga terlihat multimodal, dengan sebagian besar data terkumpul di sekitar nilai 60-90.
+- BS (Gula Darah): Distribusi gula darah sangat miring ke kanan (positively skewed), dengan sebagian besar nilai terkumpul di rentang rendah (sekitar 5-10), dan beberapa nilai ekstrem yang lebih tinggi.
+- BodyTemp (Suhu Tubuh): Distribusi suhu tubuh terlihat mendekati normal, dengan sebagian besar data terkumpul di sekitar 98-100 derajat.
+- HeartRate (Detak Jantung): Distribusi detak jantung terlihat sedikit miring ke kanan, dengan sebagian besar data terkumpul di sekitar 60-80 denyut per menit.
+
+Off-Diagonal (Scatter Plots):
+
+Setiap scatter plot di luar diagonal menunjukkan hubungan antara dua variabel yang berbeda. Mari kita lihat beberapa pola yang mungkin terlihat:
+
+- Age vs. Variabel Lain: Tidak terlihat korelasi linear yang kuat antara usia dengan variabel tekanan darah (SystolicBP, DiastolicBP), gula darah (BS), suhu tubuh (BodyTemp), atau detak jantung (HeartRate). Namun, kita bisa melihat sebaran data yang lebih luas pada beberapa variabel seiring bertambahnya usia.
+- Tekanan Darah (SystolicBP vs. DiastolicBP): Terdapat korelasi positif yang cukup kuat antara tekanan darah sistolik dan diastolik. Artinya, cenderung individu dengan tekanan darah sistolik yang lebih tinggi juga memiliki tekanan darah diastolik yang lebih tinggi.
+- Tekanan Darah vs. Variabel Lain: Tidak terlihat pola linear yang jelas antara tekanan darah (sistolik atau diastolik) dengan gula darah, suhu tubuh, atau detak jantung.
+- BS (Gula Darah) vs. Variabel Lain: Tidak terlihat korelasi linear yang kuat antara gula darah dengan usia, tekanan darah, suhu tubuh, atau detak jantung. Namun, karena distribusi gula darah sangat miring, sulit untuk menarik kesimpulan tentang hubungan linear dari scatter plot saja.
+- BodyTemp (Suhu Tubuh) vs. Variabel Lain: Tidak terlihat korelasi linear yang kuat antara suhu tubuh dengan variabel lainnya. Sebaran data terlihat cukup homogen.
+- HeartRate (Detak Jantung) vs. Variabel Lain: Tidak terlihat korelasi linear yang kuat antara detak jantung dengan usia, tekanan darah, gula darah, atau suhu tubuh.
 
 ### Gambar 3a. Analisis Matrix Korelasi
 ![Gambar 3a - Matrix Korelasi](https://drive.google.com/uc?export=view&id=1gD2FLjbVDR86-GtTJEprVE0F8Xh3zmIY)
