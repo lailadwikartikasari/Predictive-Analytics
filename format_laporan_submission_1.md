@@ -75,7 +75,7 @@ Dari diagram batang tersebut, dapat diamati bahwa:
 - High risk memiliki frekuensi paling rendah di antara ketiga kategori, dengan jumlah sampel sekitar 25.
 
 ### Gambar 1b. Analisis Univariat (Data Numerik)
-![Gambar 1b - Analisis Univariat Data Numerik](https://drive.google.com/uc?export=view&id=1PDIKRXH67uBhvZ563AcUtD3nzHz8ljQx)
+![Gambar 1b - Analisis Univariat Data Numerik](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/download%20(1).png)
 
 Gambar tersebut menampilkan histogram dari enam fitur yang berbeda dalam sebuah dataset. Setiap histogram menunjukkan distribusi frekuensi nilai untuk masing-masing fitur. Mari kita analisis setiap histogram secara individual:
 
@@ -87,7 +87,7 @@ Gambar tersebut menampilkan histogram dari enam fitur yang berbeda dalam sebuah 
 - HeartRate: Histogram untuk "HeartRate" (Detak Jantung) menunjukkan distribusi detak jantung. Sebagian besar data terkumpul di sekitar nilai 80-90 denyut per menit. Terdapat juga beberapa nilai yang lebih rendah dan lebih tinggi dengan frekuensi yang lebih sedikit, termasuk beberapa nilai yang cukup tinggi di atas 140.
 
 ### Gambar 2a. Analisis Multivariat (Data Kategori dan Numerik)
-![Gambar 2a - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1bJwea4p9QpEyw1AhWYH3gG3gLqP3NW-E)
+![Gambar 2a - Analisis Multivariat](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/download%20(2).png)
 
 Berdasarkan gambar yang diberikan, grafik batang ini menunjukkan rata-rata 'HeartRate' (detak jantung) relatif terhadap 'RiskLevel' (tingkat risiko). Sumbu horizontal (sumbu-x) menunjukkan tiga kategori tingkat risiko: 'high risk' (risiko tinggi), 'low risk' (risiko rendah), dan 'mid risk' (risiko sedang). Sumbu vertikal (sumbu-y) menunjukkan nilai rata-rata 'HeartRate'.
 
@@ -97,7 +97,7 @@ Dari grafik tersebut, dapat diamati bahwa:
 - Batang untuk 'mid risk' menunjukkan rata-rata detak jantung sekitar 74.
 
 ### Gambar 2b. Analisis Multivariat (Data Numerik dan Numerik)
-![Gambar 2b - Analisis Multivariat](https://drive.google.com/uc?export=view&id=1XyS-SRes_Mr_ibGD7vMDE5WEdNz6Qdmr)
+![Gambar 2b - Analisis Multivariat](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/download%20(3).png)
 
 Tentu, mari kita analisis gambar pair plot ini. Gambar ini menyajikan visualisasi hubungan antara beberapa variabel numerik dalam sebuah dataset. Setiap variabel dibandingkan dengan variabel lainnya dalam bentuk scatter plot, dan distribusi univariat dari setiap variabel ditampilkan di diagonal.
 
@@ -123,7 +123,7 @@ Setiap scatter plot di luar diagonal menunjukkan hubungan antara dua variabel ya
 - HeartRate (Detak Jantung) vs. Variabel Lain: Tidak terlihat korelasi linear yang kuat antara detak jantung dengan usia, tekanan darah, gula darah, atau suhu tubuh.
 
 ### Gambar 3a. Analisis Matrix Korelasi
-![Gambar 3a - Matrix Korelasi](https://drive.google.com/uc?export=view&id=1gD2FLjbVDR86-GtTJEprVE0F8Xh3zmIY)
+![Gambar 3a - Matrix Korelasi](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/download%20(4).png)
 
 ## Data Preparation
 Berikut ini merupakan tahapan-tahapan dalam melakukan pra-pemrosesan data:
@@ -138,7 +138,7 @@ Berikut ini merupakan tahapan-tahapan dalam melakukan pra-pemrosesan data:
 ## Modeling
 Pada proyek ini, Proses modeling dalam proyek ini menggunakan 3 algoritma _machine learning_ yaitu `K-Nearest Neighbor`, `Random Forest` dan `Boosting Algorithm` kemudian membandingkan performanya.
 
-### K-Nearest Neighbor
+### **K-Nearest Neighbor**
 <br> KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) dari library Scikitlearn dengan nilai k = 10 dan metric Euclidean yang artinya, pada model ini akan membandingkan jarak satu sampel data ke 10 sampel data tetangganya yang terdekat, agar hasil persamaan regresi yang dihasilkannya nantinya akan lebih halus, tahapan itu akan dilakukan berulang-ulang hingga mendapatkan hasil persamaan regresi dengan nilai yang maksimal. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian.
   -   Kelebihan:
       -   Algoritma KNN merupakan algoritma yang sederhana dan mudah untuk diimplementasikan.
@@ -146,7 +146,7 @@ Pada proyek ini, Proses modeling dalam proyek ini menggunakan 3 algoritma _machi
   -   Kekurangan:
       -   Algoritma KNN menjadi lebih lambat secara signifikan seiring meningkatnya jumlah sampel dan/atau variabel independen.
 
-- **Random Forest**
+### **Random Forest**
   <br> Algoritma ini disusun dari banyak algoritma pohon (decision tree) yang pembagian data dan fiturnya dipilih secara acak. Pembuatan model dilakukan dengan menggunakan modul [RandomForestClassifier](https://scikitlearn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) dari library Scikitlearn. terdapat parameter yang harus digunakan agar hasil dari pembuatan model dapat maksimal.
   -   Kelebihan :
       -   Algoritma Random Forest merupakan algoritma dengan pembelajaran paling akurat yang tersedia. Untuk banyak kumpulan data, algoritma ini menghasilkan pengklasifikasi yang sangat akurat.
@@ -158,7 +158,7 @@ Pada proyek ini, Proses modeling dalam proyek ini menggunakan 3 algoritma _machi
       -   Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang _bising/noise_.
       -   Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.
 
-- **Boosting Algorithm**
+### **Boosting Algorithm**
   <br> Algoritma ini bekerja dengan membangun model dari data latih. Kemudian ia membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan. Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [Boosting Alghoritm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html) dari library Scikitlearn. 
   -   Kelebihan :
       -   Algoritma Boosting dapat mengurangi bias pada data.
@@ -180,7 +180,7 @@ Sebelum menggunakan metrik MSE, harus dilakukan scaling fitur numerik terlebih d
 
 Berikut ini perbandingan grafik metrik MSE pada ketiga model:
 <br>
-![Gambar Model](https://drive.google.com/uc?export=view&id=1a0674_h3DrMMgb_gkVYklWQlXh00aZY1)
+![Gambar Model](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/evaluasi.png)
 
 Tabel 1 berikut merupakan perbandingan 3 buah model yang coba dibandingkan dengan data uji dan data latih:
 |     |train|test|
