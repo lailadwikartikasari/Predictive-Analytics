@@ -14,26 +14,15 @@ Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa fak
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
-- Bagaimana cara melakukan pra-pemrosesan data tingkat risiko kesehatan ibu hamil sehingga dapat digunakan untuk membuat model yang baik?
-- Bagaimana mengolah dataset agar dapat dibuat menjadi model prediksi tingkat risiko kesehatan ibu hamil yang akurat?
-- Bagaimana cara membantu tenaga medis dalam mengidentifikasi risiko kesehatan ibu hamil secara lebih awal dan akurat untuk mencegah komplikasi kehamilan dan kematian ibu/bayi?
+Bagaimana cara melakukan pemantauan faktor risiko seperti usia, tekanan darah, kadar gula darah, dan detak jantung untuk mencegah komplikasi pada kesehatan ibu hamil?
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
-- Melakukan pra-pemrosesan data tingkat risiko kesehatan ibu hamil agar dapat digunakan dalam membangun model.
-- Melakukan proses data wragling dan data preparation terhadap dataset agar dapat dibuat model predksi tingkat risiko kesehatan ibu hamil yang akurat.
+Membangun model _machine learning_ untuk memprediksi risiko kesehatan ibu hamil secara cepat dan akurat berdasarkan parameter medis.
 
 ### Solution statements
-- **Pra-pemrosesan Data**. Pada pra-pemrosesan data dapat dilakukan beberapa tahapan, antara lain:
-  
-    -   Melakukan perhitungan dataset berdasarkan data: Age, SystolicBP, DiastolicBP, BS, BodyTemp, HeartRate, RiskLevel.
-    -   Melakukan pembagian dataset.
-    -   Mengatasi data pencilan (_outliers_) dengan Metode IQR.
-    -   Standardisasi data fitur numerik pada dataset.
-    
-- Agar didapatkan model prediksi yang baik maka dilakukan proses Data Wragling yang meliputi Data Gathering, Data Assessing, dan Data Cleaning.
+
+Mengembangkan model machine learning yang menganalisis data ibu hamil (usia, tekanan darah, kadar gula, detak jantung, dll.) untuk mengklasifikasikan tingkat risiko kehamilan, sehingga dapat menjadi alat pendukung keputusan (decision support system) bagi bidan dan dokter.
 
 ## Data Understanding
 - **Informasi Dataset**
@@ -130,10 +119,14 @@ Setiap scatter plot di luar diagonal menunjukkan hubungan antara dua variabel ya
 Berikut ini merupakan tahapan-tahapan dalam melakukan pra-pemrosesan data:
 
 1. **Melakukan Penanganan Duplikat dan Outlier**
-    <br> Penanganan yang penulis lakukan pada Duplikat yaitu dengan melakukan drop data Dan untuk mengatasi outlier pada proyek, penulis menggunakan penentuan batas atas dan bawah nilai kuartil pada data dengan menggunakan metode IQR.
-2. **Melakukan pembagian dataset**
+    <br> Penanganan yang penulis lakukan pada Duplikat yaitu dengan melakukan drop data dan untuk mengatasi outlier pada proyek, penulis menggunakan penentuan batas atas dan bawah nilai kuartil pada data dengan menggunakan metode IQR.
+2. **Melakukan Encoding Data Kategori**
+    <br> Encoding adalah proses mengubah data kategori (teks atau label) menjadi bentuk numerik atau format lain yang bisa diproses oleh komputer atau algoritma. [Encoding](https://www.geeksforgeeks.org/ml-one-hot-encoding/)
+3. **Melakukan Reduksi Dimensi dengan PCA**
+    <br> Teknik mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data.
+4. **Melakukan Train-Test Split**
     <br> Untuk mengetahui kinerja model ketika dihadapkan pada data yang belum pernah dilihat sebelumnya, maka perlu dilakukan pembagian dataset. Pada proyek ini dataset dibagi menjadi data latih dan data uji dengan rasio 90% untuk data latih dan 10% untuk data uji. Data latih merupakan data yang akan kita latih untuk membangun model _machine learning_, sedangkan data uji merupakan data yang belum pernah dilihat oleh model dan digunakan untuk melihat kinerja atau performa dari model yang dilatih.  Pembagian dataset dilakukan dengan modul [train_test_split](https://scikit-learn.org/0.24/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split) dari scikit-learn. Setelah melakukan pembagian dataset, didapatkan jumlah sample pada data latih yaitu 912 sampel dan jumlah sample pada data uji yaitu 102 sampel dari total jumlah sample pada dataset yaitu 1014 sampel.
-3. **Standardisasi data pada semua fitur numerik pada dataset**
+5. **Standardisasi data pada semua fitur numerik pada dataset**
   <br> Standardisasi merupakan teknik transformasi yang paling umum digunakan dalam tahap data _preparation_. Standardisasi membantu untuk membuat semua fitur numerik berada dalam skala data yang sama dan membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. Pada proyek ini, standardisasi data dilakukan dengan menerapkan teknik [StandarScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) dari library Scikitlearn. StandardScaler melakukan proses standardisasi fitur dengan mengurangkan mean (nilai rata-rata) kemudian membaginya dengan standard deviasi untuk menggeser distribusi.  StandardScaler menghasilkan distribusi dengan standard deviasi sama dengan 1 dan mean sama dengan 0. Sekitar 68% dari nilai akan berada di antara -1 dan 1.
 
 ## Modeling
