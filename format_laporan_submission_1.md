@@ -64,7 +64,7 @@ Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam p
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
 ### Gambar 1a. Analisis Univariat (Data Kategori)
-![Gambar 1a - Analisis Univariat Data Kategori](https://raw.githubusercontent.com/C:/Users/msqax/Downloads/download.png)
+![Gambar 1a - Analisis Univariat Data Kategori](https://raw.githubusercontent.com/D:/STUPEN/Predictive-Analytics/image/download.png)
 
 
 Gambar tersebut adalah diagram batang (bar chart) yang menampilkan distribusi frekuensi untuk variabel RiskLevel. Sumbu horizontal (sumbu-x) menunjukkan kategori tingkat risiko, yaitu "low risk", "mid risk", dan "high risk". Sumbu vertikal (sumbu-y) menunjukkan jumlah atau frekuensi sampel untuk setiap kategori risiko.
