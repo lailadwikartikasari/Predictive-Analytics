@@ -4,9 +4,9 @@
 
 Perkembangan Machine Learning yang sangat pesat dapat membantu manusia dalam menyelesaikan permasalahan yang rumit dengan komputasi komputer. Pada proyek ini penulis ingin menggunakan Machine Learning untuk membantu manusia dalam perawatan kesehatan ibu Hamil.
 
-Masa  Kehamilan  merupakan  masa  penting bagi seorang ibu, padakondisi ini ibu harus lebih fokus untuk memelihara  kesehatan diri sendiri dikarenakan adanya calon manusia yang  akan dilahirkan.Kesehatan yang     buruk bagi ibu hamil akan mempengaruhi kesehatan janin yang dikandungnya.Kesehatan ibu hamil yang buruk  dapat  mengakibatkan kematian ibu dan anak. [[1](https://ejournal.bsi.ac.id/ejurnal/index.php/swabumi/article/view/15270/pdf)]
+Masa  Kehamilan  merupakan  masa  penting bagi seorang ibu, pada kondisi ini ibu harus lebih fokus untuk memelihara  kesehatan diri sendiri dikarenakan adanya calon manusia yang  akan dilahirkan. Kesehatan yang     buruk bagi ibu hamil akan mempengaruhi kesehatan janin yang dikandungnya. Kesehatan ibu hamil yang buruk  dapat  mengakibatkan kematian ibu dan anak. [[1](https://ejournal.bsi.ac.id/ejurnal/index.php/swabumi/article/view/15270/pdf)]
 
-Faktor penting penyebab kehamilan berisiko terjadi pada kelompok ibu usia reproduksi <20 tahun dan umur >35 tahun. Kategori usia ibu kurang dari 20 tahun dianggap alat reproduksi masih terlalu muda dan belum matang, keadaan uterus belum sempurna untuk proses kehamilan dan persalinan yang dapat membahayakan kondisi ibu serta pertumbuhan dan perkembangan janin dalam kandungan.Ibu dengan usia lebih dari 35 tahun dapat berisiko terjadinya penyulit disebabkan penurunan fungsi reproduksi dan melemahnya tenaga untuk mengejan ketika proses kelahiran bayi[[2](https://jik.stikesalifah.ac.id/index.php/jurnalkes/article/view/708/pdf)]
+Faktor penting penyebab kehamilan berisiko terjadi pada kelompok ibu usia reproduksi <20 tahun dan umur >35 tahun. Kategori usia ibu kurang dari 20 tahun dianggap alat reproduksi masih terlalu muda dan belum matang, keadaan uterus belum sempurna untuk proses kehamilan dan persalinan yang dapat membahayakan kondisi ibu serta pertumbuhan dan perkembangan janin dalam kandungan. Ibu dengan usia lebih dari 35 tahun dapat berisiko terjadinya penyulit disebabkan penurunan fungsi reproduksi dan melemahnya tenaga untuk mengejan ketika proses kelahiran bayi[[2](https://jik.stikesalifah.ac.id/index.php/jurnalkes/article/view/708/pdf)]
 
 Menjaga kesehatan kandungan selama kehamilan sangat bergantung pada beberapa faktor risiko, seperti: usia, Tekanan Darah Sistolik, DiastolikBP, BS, HeartRate. Berdasarkan permasalahan di atas, maka pada proyek ini akan dibangun suatu model machine learning untuk memprediksi risiko kesehatan ibu hamil. Dengan adanya model machine learning ini, diharapkan dapat membantu dan memudahkan analisa serta dapat mengambil keputusan yang tepat tentang strategi perawatan kesehatan dalam dunia kebidanan. Sehingga dapat meminimalisir kesalahan diagnosis dan komplikasi kehamilan di masa mendatang.
 
@@ -64,7 +64,8 @@ Selain melakukan analisis data, visualisasi data menjadi langkah krusial dalam p
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
 ### Gambar 1a. Analisis Univariat (Data Kategori)
-![Gambar 1a - Analisis Univariat Data Kategori](https://drive.google.com/uc?export=view&id=14ITvwT6iohnlkP92AT2GtNpwbWMopJru)
+![Gambar 1a - Analisis Univariat Data Kategori](https://raw.githubusercontent.com/"C:/Users/msqax/Downloads/download.png")
+
 
 Gambar tersebut adalah diagram batang (bar chart) yang menampilkan distribusi frekuensi untuk variabel RiskLevel. Sumbu horizontal (sumbu-x) menunjukkan kategori tingkat risiko, yaitu "low risk", "mid risk", dan "high risk". Sumbu vertikal (sumbu-y) menunjukkan jumlah atau frekuensi sampel untuk setiap kategori risiko.
 
