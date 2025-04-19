@@ -133,34 +133,52 @@ Berikut ini merupakan tahapan-tahapan dalam melakukan pra-pemrosesan data:
 Pada proyek ini, Proses modeling dalam proyek ini menggunakan 3 algoritma _machine learning_ yaitu `K-Nearest Neighbor`, `Random Forest` dan `Boosting Algorithm` kemudian membandingkan performanya.
 
 ### **K-Nearest Neighbor**
-<br> KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) dari library Scikitlearn dengan nilai k = 10 dan metric Euclidean yang artinya, pada model ini akan membandingkan jarak satu sampel data ke 10 sampel data tetangganya yang terdekat, agar hasil persamaan regresi yang dihasilkannya nantinya akan lebih halus, tahapan itu akan dilakukan berulang-ulang hingga mendapatkan hasil persamaan regresi dengan nilai yang maksimal. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian.
-  -   Kelebihan:
-      -   Algoritma KNN merupakan algoritma yang sederhana dan mudah untuk diimplementasikan.
-      -   Dapat di implementasikan pada beberapa kasus seperti klasifikasi, regresi dan pencarian.
-  -   Kekurangan:
-      -   Algoritma KNN menjadi lebih lambat secara signifikan seiring meningkatnya jumlah sampel dan/atau variabel independen.
+<br> KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [KNeighborsRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html) dari library Scikitlearn.  
+
+Dengan parameter:
+```
+knn = KNeighborsRegressor(n_neighbors=10)
+```
+ pada model ini akan membandingkan jarak satu sampel data ke 10 sampel data tetangganya yang terdekat, agar hasil persamaan regresi yang dihasilkannya nantinya akan lebih halus, tahapan itu akan dilakukan berulang-ulang hingga mendapatkan hasil persamaan regersi dengan nilai yang maksimal. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian.
+-   Kelebihan:
+    -   Algoritma KNN merupakan algoritma yang sederhana dan mudah untuk diimplementasikan.
+    -   Algoritma KNN dapat di implementasikan pada beberapa kasus seperti klasifikasi, regresi dan pencarian.
+-   Kekurangan:
+    -   Algoritma KNN menjadi lebih lambat secara signifikan seiring meningkatnya jumlah sampel dan/atau variabel independen.
 
 ### **Random Forest**
-  <br> Algoritma ini disusun dari banyak algoritma pohon (decision tree) yang pembagian data dan fiturnya dipilih secara acak. Pembuatan model dilakukan dengan menggunakan modul [RandomForestClassifier](https://scikitlearn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) dari library Scikitlearn. terdapat parameter yang harus digunakan agar hasil dari pembuatan model dapat maksimal.
-  -   Kelebihan :
-      -   Algoritma Random Forest merupakan algoritma dengan pembelajaran paling akurat yang tersedia. Untuk banyak kumpulan data, algoritma ini menghasilkan pengklasifikasi yang sangat akurat.
-      -   Berjalan secara efisien pada data besar.
-      -   Dapat menangani ribuan variabel input tanpa penghapusan variabel.
-      -   Memberikan perkiraan variabel apa yang penting dalam klasifikasi.
-      -   Memiliki metode yang efektif untuk memperkirakan data yang hilang dan menjaga akurasi ketika sebagian besar data hilang.
-  -   Kekurangan :
-      -   Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang _bising/noise_.
-      -   Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.
+<br> Algoritma ini disusun dari banyak algoritma pohon (decision tree) yang pembagian data dan fiturnya dipilih secara acak. Pembuatan model dilakukan dengan menggunakan modul [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) dari library Scikitlearn. 
+  
+ Dengan Parameter:
+```
+RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+```
+*n_estimators=50* Jumlah pohon keputusan (decision trees) dalam model Random Forest. Lebih banyak pohon biasanya meningkatkan kinerja tetapi juga meningkatkan kompleksitas dan waktu pelatihan. *max_depth=16* Kedalaman maksimum setiap pohon keputusan. Ini membatasi seberapa banyak pohon dapat bercabang, membantu mencegah overfitting. *random_state=55* Untuk memastikan bahwa hasil yang sama diperoleh setiap kali kode dijalankan, dengan mengontrol pengacakan dalam proses pembuatan pohon. *n_jobs=-1* Menggunakan semua inti prosesor yang tersedia untuk mempercepat pelatihan mode agar hasil dapat maksimal.
+-   Kelebihan :
+    -   Algoritma Random Forest merupakan algoritma dengan pembelajaran paling akurat yang tersedia. Untuk banyak kumpulan data, algoritma ini menghasilkan pengklasifikasi yang sangat akurat.
+    -   Berjalan secara efisien pada data besar.
+    -   Dapat menangani ribuan variabel input tanpa penghapusan variabel.
+    -   Memberikan perkiraan variabel apa yang penting dalam klasifikasi.
+    -   Memiliki metode yang efektif untuk memperkirakan data yang hilang dan menjaga akurasi ketika sebagian besar data hilang.
+-   Kekurangan :
+    -   Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang _bising/noise_.
+    -   Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.
 
 ### **Boosting Algorithm**
-  <br> Algoritma ini bekerja dengan membangun model dari data latih. Kemudian ia membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan. Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [Boosting Alghoritm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html) dari library Scikitlearn. 
-  -   Kelebihan :
-      -   Algoritma Boosting dapat mengurangi bias pada data.
-      -   Prosedur Boosting cukup sederhana.
-      -   Algoritma ini sangat powerful dalam meningkatkan akurasi prediksi.
-      -   Algoritma boosting sering mengungguli model yang lebih sederhana seperti logistic regression dan random forest.
-  -   Kekurangan :
-      -   AdaBoost sangat dipengaruhi oleh outlier.
+<br> Algoritma ini bekerja dengan membangun model dari data latih. Kemudian ia membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan. Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [Boosting Alghoritm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html) dari library Scikitlearn. 
+
+ Dengan Parameter:
+```
+boosting = AdaBoostRegressor(learning_rate=0.05, random_state=55)
+```
+*learning_rate=0.05* Mengontrol seberapa besar kontribusi setiap pohon baru terhadap model. Nilai yang lebih kecil menghasilkan pembelajaran yang lebih lambat tetapi berpotensi meningkatkan kinerja. *random_state=55* Untuk memastikan hasil yang konsisten dengan mengontrol pengacakan dalam proses boosting.
+-   Kelebihan :
+    -   Algoritma Boosting dapat mengurangi bias pada data.
+    -   Prosedur Boosting cukup sederhana.
+    -   Algoritma ini sangat powerful dalam meningkatkan akurasi prediksi.
+    -   Algoritma boosting sering mengungguli model yang lebih sederhana seperti logistic regression dan random forest.
+-   Kekurangan :
+    -   AdaBoost sangat dipengaruhi oleh outlier.
 
 ## Evaluation
 Pada proyek ini, metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik  **MSE**.MSE sendiri merupakan _Mean Squared Error_ yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan dalam persamaan berikut: <br>
