@@ -45,7 +45,7 @@ Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
 - Dataset memiliki *data duplikat* sejumlah 562 records
 
 **Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data**:
-Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data
+Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data:
 
 Analisis univariat adalah metode analisis data sederhana yang fokus pada satu variabel saja. Visualisasi yang dihasilkan biasanya bertujuan untuk menunjukkan bagaimana data pada variabel tersebut terdistribusi. Sebaliknya, analisis multivariat melibatkan lebih dari dua variabel sekaligus. Tujuan visualisasinya adalah untuk mengungkap hubungan dan pola yang kompleks dalam data yang memiliki banyak dimensi.
 
