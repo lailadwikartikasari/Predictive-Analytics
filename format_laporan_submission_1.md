@@ -190,15 +190,28 @@ Pada proyek ini, metrik evaluasi yang digunakan untuk mengukur kinerja model yai
 
 Sebelum menggunakan metrik MSE, harus dilakukan scaling fitur numerik terlebih dahulu pada data uji untuk menghindari kebocoran data. Setelah melakukan evaluasi berdasarkan metrik MSE.
 
-Berikut ini perbandingan grafik metrik MSE pada ketiga model:
-<br>
-![Gambar Model](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/evaluasi.png)
-
 Tabel 1 berikut merupakan perbandingan 3 buah model yang coba dibandingkan dengan data uji dan data latih:
 |     |train|test|
 |---|---|---|
 |KNN|0.030923|0.106557|
 |RF|0.003346|0.103572|
 |Boosting|0.050693|0.091678|
+
+Perbandingan Performa Model:
+- Random Forest (RF) memiliki MSE terendah di data latih (0.003346), menunjukkan kemampuan fitting yang sangat baik.
+- Boosting unggul di data uji (MSE = 0.091678), menandakan generalisasi yang lebih baik dibanding model lain.
+- KNN memiliki error tertinggi di data uji (0.106557), mungkin karena overfitting atau sensitivitas terhadap noise.
+
+Berikut ini perbandingan grafik metrik MSE pada ketiga model:
+<br>
+![Gambar Model](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/evaluasi.png)
+
+Berdasarkan Gambar diatas dapat disimpulkan bahwa nilai error train dan test dari Model 3 dan Model RF jauh lebih baik dibandingkan model lainnya.
+
+|     |y_true|prediksi_KNN|prediksi_RF|prediksi_Boosting|
+|---|---|---|---|---|
+|50|66|75.4|75.5|73.8|
+
+
 
 **---Ini adalah bagian akhir laporan---**
