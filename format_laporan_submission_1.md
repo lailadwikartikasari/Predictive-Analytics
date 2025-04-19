@@ -206,12 +206,13 @@ Berikut ini perbandingan grafik metrik MSE pada ketiga model:
 <br>
 ![Gambar Model](https://github.com/lailadwikartikasari/Predictive-Analytics/blob/main/image/evaluasi.png)
 
-Berdasarkan Gambar diatas dapat disimpulkan bahwa nilai error train dan test dari Model 3 dan Model RF jauh lebih baik dibandingkan model lainnya.
+Berdasarkan Gambar diatas dapat disimpulkan bahwa nilai error train dan test dari Model 3 dan Model Boosting jauh lebih baik dibandingkan model lainnya.
 
 |     |y_true|prediksi_KNN|prediksi_RF|prediksi_Boosting|
 |---|---|---|---|---|
 |50|66|75.4|75.5|73.8|
 
+Berdasarkan hasil evaluasi, terlihat bahwa prediksi tingkat risiko kehamilan dengan model Boosting memberikan hasil yang paling mendekati nilai sebenarnya (y_true = 50), dimana prediksi Boosting menghasilkan nilai 73.8. Meskipun ketiga model (KNN, RF, dan Boosting) memberikan prediksi di atas nilai aktual, model Boosting menunjukkan performa terbaik dengan selisih yang paling kecil terhadap y_true. Dengan demikian, dapat disimpulkan bahwa model Boosting Regressor yang telah dikembangkan mampu memprediksi dengan akurasi yang lebih baik dibandingkan model lainnya dalam kasus ini.
 
 
 **---Ini adalah bagian akhir laporan---**
